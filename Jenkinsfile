@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('log version info')
     {
+      
     }
   }
 }
