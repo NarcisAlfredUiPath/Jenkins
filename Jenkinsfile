@@ -3,8 +3,7 @@ pipeline {
     stages {  
         stage('build') {  
             steps {
-                sh 'mvn --version'
-                sh 'mvn clean install'
+                UiPathPack outputPath: '${WORKSPACE}\\Output', projectJsonPath: '${WORKSPACE}', traceLevel: 'None', version: AutoVersion()
             }
         }
     }
