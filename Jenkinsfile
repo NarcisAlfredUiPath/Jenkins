@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Starting packaging...'
                 UiPathPack 
-                ( outputPath: '${WORKSPACE}\Output', 
+                ( outputPath: '${WORKSPACE}\\Output', 
                  projectJsonPath: 'project.json', 
                  traceLevel: 'None', 
                  version: AutoVersion() )
