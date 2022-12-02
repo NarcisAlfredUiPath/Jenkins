@@ -3,7 +3,6 @@ pipeline {
     stages {  
         stage('Build') {  
             steps {
-                sh 'mvn clean install'
                 UiPathPack outputPath: '${WORKSPACE}\\Output', projectJsonPath: 'C:\\Users\\narcis.szene\\Documents\\UiPath\\JenkinsTraining', traceLevel: 'None', version: AutoVersion()
                 echo 'Build Phase'
             }
