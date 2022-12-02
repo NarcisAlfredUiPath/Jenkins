@@ -4,7 +4,12 @@ pipeline {
         stage('Build') {  
             steps {
                 echo 'Starting packaging...'
-                UiPathPack outputPath: '${WORKSPACE}\\Output', projectJsonPath: 'project.json', traceLevel: 'None', version: AutoVersion()
+                UiPathPack (
+                    outputPath: "${WORKSPACE}\\Output", 
+                    projectJsonPath: "project.json", 
+                    traceLevel: 'None',
+                    version: AutoVersion()
+                    )
             }
         }
     }
