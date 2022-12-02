@@ -34,4 +34,5 @@ pipeline {
 	            /* Cleans workspace */
 	            cleanWs()
 	        }
+    }
 }
