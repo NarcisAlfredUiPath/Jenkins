@@ -28,6 +28,20 @@ pipeline {
                     )
             }
         }
+		stage('Assets') {
+			steps {
+				echo 'Deploying assets...'
+				UiPathAssets (
+					assetsAction: DeployAssets(), 
+					credentials: Token(accountName: 'NarcisOrg', credentialsId: '961a283c-4809-4212-a82c-bb161b2c3d54'), 
+					filePath: "C:\\Users\\narcis.szene\\Desktop\\Assets.csv", 
+					folderName: 'JenkinsProjects', 
+					orchestratorAddress: 'https://cloud.uipath.com/narcisorg/DefaultTenant/orchestrator_/?tid=1159609&fid=3898370', 
+					orchestratorTenant: 'DefaultTenant', 
+					traceLevel: 'None'
+					)
+			}
+		}
     }
     post {
 	        always {
