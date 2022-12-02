@@ -26,5 +26,7 @@ pipeline {
                     packagePath: "${WORKSPACE}\\Output", 
                     traceLevel: 'None' 
                     )
+            }
+        }
     }
 }
