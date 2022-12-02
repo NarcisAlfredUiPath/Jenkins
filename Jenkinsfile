@@ -3,7 +3,7 @@ pipeline {
     stages {  
         stage('build') {  
             steps {
-                UiPathPack outputPath: '${WORKSPACE}\\Output', projectJsonPath: '${WORKSPACE}', traceLevel: 'None', version: AutoVersion()
+                UiPathPack outputPath: '${WORKSPACE}\\Output', projectJsonPath: 'C:\\Users\\narcis.szene\\Documents\\UiPath\\JenkinsTraining', traceLevel: 'None', version: AutoVersion()
             }
         }
     }
