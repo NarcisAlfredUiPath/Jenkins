@@ -28,6 +28,9 @@ pipeline {
                     )
             }
         }
+
+
+/* syntax used to add assets 
 		stage('Assets') {
 			steps {
 				echo 'Deploying assets...'
@@ -42,7 +45,15 @@ pipeline {
 					)
 			}
 		}
-    }
+*/
+		stage('Test Cases') {
+			steps {
+				echo 'Performing tests...'
+				.\UiPathRunTest.ps1 -orchestrator_url "https://cloud.uipath.com/narcisorg/DefaultTenant/orchestrator_/?tid=1159609&fid=3898370" -orchestrator_tenant DefaultTenant -testset "TestCase1" -UserKey 961a283c-4809-4212-a82c-bb161b2c3d54 -account_name NarcisOrg
+			}
+		}
+	
+	}
     post {
 	        always {
 	            /* Cleans workspace */
