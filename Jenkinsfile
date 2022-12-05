@@ -3,7 +3,7 @@ pipeline {
     stages {  
 		stage('Powershell Version') {
 			steps {
-				sh 'mvn --version'
+				sh '--version'
 			}
 		}
 		
