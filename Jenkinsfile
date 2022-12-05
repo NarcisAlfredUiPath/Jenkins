@@ -1,6 +1,12 @@
 pipeline {    
     agent any      
     stages {  
+		stage('Powershell Version') {
+			steps {
+				sh 'pwsh --version'
+			}
+		}
+		
         stage('Build') {  
             steps {
                 echo 'Starting packaging...'
@@ -20,7 +26,6 @@ pipeline {
 			}
 		}
 		
-		
         stage('Deploy') {
             steps {
                 echo 'Starting deployment...' 
@@ -37,7 +42,6 @@ pipeline {
                     )
             }
         }
-
 
 /* syntax used to add assets 
 		stage('Assets') {
@@ -56,7 +60,6 @@ pipeline {
 		}
 */
 		
-	
 	}
     post {
 	        always {
