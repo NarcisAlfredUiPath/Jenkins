@@ -3,7 +3,7 @@ pipeline {
     stages {  
 		stage('Powershell Version') {
 			steps {
-				sh '--version'
+				sh '$PSVersionTable'
 			}
 		}
 		
