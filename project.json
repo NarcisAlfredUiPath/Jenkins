@@ -9,7 +9,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.5.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.123934902",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -39,7 +39,7 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b26bd14a-007a-47d3-aea8-35c3d5a7346d",
         "testCaseType": "TestCase",
         "fileName": "TestCase1.xaml"
