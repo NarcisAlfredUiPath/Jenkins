@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "JenkinsTraining",
   "description": "Process meant to use for jenkins",
   "main": "Main.xaml",
@@ -24,7 +24,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -36,7 +37,20 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b26bd14a-007a-47d3-aea8-35c3d5a7346d",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "42cb894f-38b9-4219-b688-e14f10d3ea22",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase2.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
