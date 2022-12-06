@@ -22,7 +22,7 @@ pipeline {
 		stage('Test Cases') {
 			steps {
 				echo 'Performing tests...'
-				powershell '.\\UiPathRunTest.ps1 -orchestrator_url "https://cloud.uipath.com/narcisorg/DefaultTenant/orchestrator_/?tid=1159609&fid=3898370" -orchestrator_tenant DefaultTenant -UserKey 961a283c-4809-4212-a82c-bb161b2c3d54 -account_name NarcisOrg -folder_organization_unit JenkinsProjects -testset "JenkinsTraining_Tests"'
+				powershell '.\\UiPathRunTest.ps1 -orchestrator_url "https://cloud.uipath.com/narcisorg" -orchestrator_tenant DefaultTenant -UserKey hKNzr0moHkfH3sknkSqoqvXW6svECD_gmcTfz-uP6dzy8 -account_name narcisorg -folder_organization_unit JenkinsProjects -testset "JenkinsTraining_Tests"'
 				}
 		}
 		
