@@ -1,11 +1,11 @@
 pipeline {    
     agent any      
     stages {  
-		stage('Powershell Version') {
-			steps {
-				powershell '$PSVersionTable'
-			}
+	stage('Powershell Version') {
+		steps {
+			powershell '$PSVersionTable'
 		}
+	}
 		
         stage('Build') {  
             steps {
